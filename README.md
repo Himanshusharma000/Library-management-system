@@ -1,15 +1,15 @@
 # 📚 LIBTrack — Library Management System
 
-A Python + SQLite command-line library management system for handling books, members, issuing/returning workflows and issue history.
+A Python + SQLite command-line application for managing books, members and issue/return workflows with persistent relational data.
 
 ## ✨ Features
 
 - Add and view books
 - Register and view members
-- Issue and return books with status tracking
+- Issue and return books
+- Track active issues and issue history
 - Persistent SQLite database
-- Issue-history reporting
-- Input validation for common library workflows
+- Input validation for common workflows
 
 ## 🛠️ Tech Stack
 
@@ -21,26 +21,27 @@ A Python + SQLite command-line library management system for handling books, mem
 python "project python.py"
 ```
 
-The application creates `library.db` automatically on first run.
+The application creates the local SQLite database when required.
 
 ## 📁 Project Structure
 
 ```text
 Library-management-system/
 ├── project python.py     # Application entry point
-├── README.md             # Documentation
-└── library.db            # Generated local database
+└── README.md             # Documentation
 ```
+
+> `library.db` is runtime data and should remain local rather than being committed to the repository.
 
 ## 🧠 What This Demonstrates
 
 - CRUD-style application logic
 - Relational database design
 - SQL queries and joins
-- State management for issue/return flows
-- Python functions and input validation
-- Persistent local data storage
+- Issue/return state management
+- Python functions and validation
+- Persistent local storage
 
 ## 🎯 Portfolio Value
 
-A compact database-focused project demonstrating how Python can be used to build a complete command-line application around a relational data model.
+A compact database-focused project demonstrating how Python can power a complete command-line application around a relational data model.
